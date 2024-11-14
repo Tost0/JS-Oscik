@@ -1,0 +1,43 @@
+<html>
+ <head>
+ <title>Oscik 3G</title>
+
+ <script language="JavaScript">
+  document.write("Szkielet zaliczeniowy JavScript Kacper Oscik 3G".fontcolor("red").fontsize(6)+"<br>");
+  function WinOpen_z1_jakubek() 
+ {
+window.open("zad1_jaku.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+  function WinOpen_z2_jakubek() 
+ {
+window.open("zad2_jaku.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+ function WinOpen_z3_jakubek() 
+ {
+window.open("zadanie3_jaku.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+function WinOpen_z4_jakubek() 
+ {
+window.open("Zadanie4_jaku.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400");
+ }
+  function WinOpen_z5_jakubek() 
+ {
+window.open("zad5_menu_jaku.html","okienko_z5","toolbar=no,directories=no,menubar=no,height=600,width=1000,top=200,left=400");
+ }
+function okno_zamknij() 
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+ <form>
+ <input type="button_z1" name="zadanie1" value="zadanie1-oscik" onclick="WinOpen_z1_jakubek(' ')">
+ <input type="button_z2" name="zadanie2" value="zadanie2-oscik" onclick="WinOpen_z2_jakubek(' ')">
+ <input type="button_z3" name="zadanie3" value="zadanie3-oscik" onclick="WinOpen_z3_jakubek(' ')">
+ <input type="button_z4" name="zadanie4" value="zadanie4-oscik" onclick="WinOpen_z4_jakubek(' ')">
+ <input type="button_z5"  name="zadanie5" value="zadanie5-oscik" onclick="WinOpen_z5_jakubek(' ')">
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+ </form>
+</body>
+</html>
