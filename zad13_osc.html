@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ościk_Zadanie13</title>
+</head>
+<body>
+    <h1>Rozkład ułamka egipskiego</h1>
+    <p>Kliknij przycisk poniżej, aby rozwiązać zadanie.</p>
+    <button onclick="rozwiazUlamki()">Rozwiąż zadanie</button>
+    <script>
+        function rozwiazUlamki() {
+            
+            let m_jak = prompt("Podaj wartość m (liczba naturalna większa od 0):");
+          
+            m_jak = parseInt(m_jak);
+
+            if (isNaN(m_jak) || m_jak <= 0) {
+                document.write("Podano nieprawidłową wartość. Spróbuj ponownie.");
+                return;
+            }
+
+            
+            let ulamek1 = m_jak + 1; 
+            let ulamek2 = m_jak * ulamek1; 
+
+            
+            document.write(`<h2>Rozkład ułamka 1/${m_jak}:</h2>`);
+            document.write(`1/${m_jak} = 1/${ulamek1} + 1/${ulamek2}`);
+        }
+    </script>
+</body>
+</html>
