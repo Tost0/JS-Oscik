@@ -9,23 +9,23 @@
 <body>
     <script>
         
-        let m_jak = prompt("Podaj wartość m (liczba naturalna większa od 0):");
+        let m_osc = prompt("Podaj wartość m (liczba naturalna większa od 0):");
 
         
-        m_jak = parseInt(m_jak);
+        m_osc = parseInt(m_osc);
 
-        if (m_jak > 0) {
+        if (m_osc > 0) {
             
-            let pierwszyUłamek = `1/${m_jak + 1}`;
-            let drugiUłamek = `1/${m_jak * (m_jak + 1)}`;
+            let pierwszyUłamek = `1/${m_osc + 1}`;
+            let drugiUłamek = `1/${m_osc * (m_osc + 1)}`;
 
             
-            let trzeciUłamek = `1/${(m_jak + 1) * (m_jak + 2)}`;
+            let trzeciUłamek = `1/${(m_osc + 1) * (m_osc + 2)}`;
 
             
             document.write(`<h1>Rozkład ułamka egipskiego na trzy ułamki</h1>`);
-            document.write(`<p>Dla m = ${m_jak}:</p>`);
-            document.write(`<p>1/${m_jak} = ${pierwszyUłamek} + ${drugiUłamek} + ${trzeciUłamek}</p>`);
+            document.write(`<p>Dla m = ${m_osc}:</p>`);
+            document.write(`<p>1/${m_osc} = ${pierwszyUłamek} + ${drugiUłamek} + ${trzeciUłamek}</p>`);
         } else {
             
             document.write(`<p>Błąd: Podana wartość musi być liczbą naturalną większą od 0.</p>`);
