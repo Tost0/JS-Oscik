@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad19 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad19" id="1" cols="80" rows="80">
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <style>
+   body { font-family: Arial, sans-serif; }
+   .button { margin: 5px; padding: 5px 10px; }
+ </style>
+</head>
+<body>
+<script type="text/javascript">
+ function Pole_osc()
+ {
+    var a_osc = parseFloat(document.getElementById('dlugosc').value);
+    var b_osc = a_osc * a_osc;
+    document.getElementById("nazwa").innerHTML ="Pole kwadratu= " + b_osc.toFixed(2) + " cm^2";
+ }
+ function obwod_osc()
+ {
+    var a_osc = parseFloat(document.getElementById('dlugosc').value);
+    var b_osc = 4 * a_osc;
+    document.getElementById("nazwa").innerHTML ="Obwód kwadratu= " + b_osc.toFixed(2) + " cm";
+ }
+</script>
+ <h1>Wszystko o KWADRACIE</h1><br><br>
+ Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+ <input type="button" class="button" name="pole" value="Oblicz pole" onclick="Pole_osc()"><br><br>
+ <input type="button" class="button" name="obwod" value="Oblicz obwod" onclick="obwod_osc()"><br><br>
+ <div style="color:red;font-size:50px;" id="nazwa"></div>
+</body>
+</html>
+
+</textarea>
+</body>
+</html>
