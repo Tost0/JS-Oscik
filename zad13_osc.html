@@ -13,22 +13,22 @@
     <script>
         function rozwiazUlamki() {
             
-            let m_jak = prompt("Podaj wartość m (liczba naturalna większa od 0):");
+            let m_osc = prompt("Podaj wartość m (liczba naturalna większa od 0):");
           
-            m_jak = parseInt(m_jak);
+            m_osc = parseInt(m_osc);
 
-            if (isNaN(m_jak) || m_jak <= 0) {
+            if (isNaN(m_osc) || m_osc <= 0) {
                 document.write("Podano nieprawidłową wartość. Spróbuj ponownie.");
                 return;
             }
 
             
-            let ulamek1 = m_jak + 1; 
-            let ulamek2 = m_jak * ulamek1; 
+            let ulamek1 = m_osc + 1; 
+            let ulamek2 = m_osc * ulamek1; 
 
             
-            document.write(`<h2>Rozkład ułamka 1/${m_jak}:</h2>`);
-            document.write(`1/${m_jak} = 1/${ulamek1} + 1/${ulamek2}`);
+            document.write(`<h2>Rozkład ułamka 1/${m_osc}:</h2>`);
+            document.write(`1/${m_osc} = 1/${ulamek1} + 1/${ulamek2}`);
         }
     </script>
 </body>
