@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad15 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad11" id="1" cols="80" rows="80">
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozkład ułamka egipskiego na dwa identyczne ułamki</title>
+</head>
+<body>
+    <script>
+        
+        let m_osc = prompt("Podaj wartość m (liczba naturalna większa od 0):");
+        
+       
+        m_osc = parseInt(m_osc);
+
+        
+        if (m_osc > 0) {
+            
+            let pierwszyUłamek = `1/${2 * m_osc}`;
+            let drugiUłamek = `1/${2 * m_osc}`;
+
+            
+            document.write(`<h1>Rozkład ułamka egipskiego na dwa identyczne ułamki</h1>`);
+            document.write(`<p>Dla m = ${m_osc}:</p>`);
+            document.write(`<p>1/${m_osc} = ${pierwszyUłamek} + ${drugiUłamek}</p>`);
+        } else {
+            
+            document.write(`<p>Błąd: Podana wartość musi być liczbą naturalną większą od 0.</p>`);
+        }
+    </script>
+</body>
+</html>
+
+    <!-- Kacper Ościk -->
+</textarea>
+</body>
+</html>
