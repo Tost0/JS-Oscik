@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad11 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad11" id="1" cols="80" rows="80">
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ościk_Zadanie13</title>
+</head>
+<body>
+    <h1>Rozkład ułamka egipskiego</h1>
+    <p>Kliknij przycisk poniżej, aby rozwiązać zadanie.</p>
+    <button onclick="rozwiazUlamki()">Rozwiąż zadanie</button>
+    <script>
+        function rozwiazUlamki() {
+            
+            let m_osc = prompt("Podaj wartość m (liczba naturalna większa od 0):");
+          
+            m_osc = parseInt(m_osc);
+
+            if (isNaN(m_osc) || m_osc <= 0) {
+                document.write("Podano nieprawidłową wartość. Spróbuj ponownie.");
+                return;
+            }
+
+            
+            let ulamek1 = m_osc + 1; 
+            let ulamek2 = m_osc * ulamek1; 
+
+            
+            document.write(`<h2>Rozkład ułamka 1/${m_osc}:</h2>`);
+            document.write(`1/${m_osc} = 1/${ulamek1} + 1/${ulamek2}`);
+        }
+    </script>
+</body>
+</html>
+
+    <!-- Kacper Ościk -->
+</textarea>
+</body>
+</html>
