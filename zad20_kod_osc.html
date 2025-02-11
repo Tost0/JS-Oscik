@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad20 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad20" id="1" cols="80" rows="80">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 20 - Trójkąt</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .input-group { margin: 10px 0; }
+        .result { color: red; font-size: 24px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Obliczanie długości boków trójkąta</h2>
+    <div class="input-group">
+        Punkt A - x: <input type="text" id="xa_osc" value="0">
+        y: <input type="text" id="ya_osc" value="0">
+    </div>
+    <div class="input-group">
+        Punkt B - x: <input type="text" id="xb_osc" value="0">
+        y: <input type="text" id="yb_osc" value="0">
+    </div>
+    <div class="input-group">
+        Punkt C - x: <input type="text" id="xc_osc" value="0">
+        y: <input type="text" id="yc_osc" value="0">
+    </div>
+    <input type="button" value="Oblicz AB" onclick="AB_osc()">
+    <input type="button" value="Oblicz BC" onclick="BC_osc()">
+    <input type="button" value="Oblicz AC" onclick="AC_osc()">
+    <div id="wynik" class="result"></div>
+
+    <script>
+        function AB_osc() {
+            var xa_osc = parseFloat(document.getElementById('xa_osc').value);
+            var ya_osc = parseFloat(document.getElementById('ya_osc').value);
+            var xb_osc = parseFloat(document.getElementById('xb_osc').value);
+            var yb_osc = parseFloat(document.getElementById('yb_osc').value);
+            var dlugoscAB = Math.sqrt(Math.pow(xb_osc - xa_osc, 2) + Math.pow(yb_osc - ya_osc, 2));
+            document.getElementById('wynik').innerHTML = "Długość boku AB = " + dlugoscAB.toFixed(2);
+        }
+        function BC_osc() {
+            var xb_osc = parseFloat(document.getElementById('xb_osc').value);
+            var yb_osc = parseFloat(document.getElementById('yb_osc').value);
+            var xc_osc = parseFloat(document.getElementById('xc_osc').value);
+            var yc_osc = parseFloat(document.getElementById('yc_osc').value);
+            var dlugoscBC = Math.sqrt(Math.pow(xc_osc - xb_osc, 2) + Math.pow(yc_osc - yb_osc, 2));
+            document.getElementById('wynik').innerHTML = "Długość boku BC = " + dlugoscBC.toFixed(2);
+        }
+        function AC_osc() {
+            var xa_osc = parseFloat(document.getElementById('xa_osc').value);
+            var ya_osc = parseFloat(document.getElementById('ya_osc').value);
+            var xc_osc = parseFloat(document.getElementById('xc_osc').value);
+            var yc_osc = parseFloat(document.getElementById('yc_osc').value);
+            var dlugoscAC = Math.sqrt(Math.pow(xc_osc - xa_osc, 2) + Math.pow(yc_osc - ya_osc, 2));
+            document.getElementById('wynik').innerHTML = "Długość boku AC = " + dlugoscAC.toFixed(2);
+        }
+    </script>
+</body>
+</html>
+
+</textarea>
+</body>
+</html>
