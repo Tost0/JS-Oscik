@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad20 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad20" id="1" cols="80" rows="80">
+
+<html>
+     <head>
+           <script type="text/javascript"> 
+                 function Autobus(marka_t, model_t, ilu_pasazerow_t, miasto_t , numer_linii_t) {
+                     this.marka = marka_t;
+                     this.model = model_t;
+                     this.ilu_pasazerow = ilu_pasazerow_t;
+                     this.miasto = miasto_t;
+                     this.numer_linii = numer_linii_t;
+                 }
+                 
+                 Autobus.prototype.wypisz = function() { 
+                     alert(this.marka + " " + this.model + " " + this.ilu_pasazerow + " pasazerow, linia " + this.numer_linii + ", z miasta " + this.miasto );
+                 };
+                 
+                 Autobus.prototype.wyswietl_nazwisko = function() {
+                     alert("Ościk");
+                 };
+
+                 var Autobus1 = new Autobus("MAN", "Lion’s City", 100, "Gdańsk", "189");
+                 var Autobus2 = new Autobus("Mercedes-Benz", "Tourismo", 110, "Gdynia", "23");
+                 
+                 Autobus1.wypisz();
+                 Autobus2.wypisz();
+                 Autobus1.wyswietl_nazwisko();
+
+                 document.write("Autobusy" + "<br>");
+                 document.write("Autobus pierwszy: " + Autobus1.marka + " " + Autobus1.model + ", pasazerow: " + Autobus1.ilu_pasazerow + ", linia: " + Autobus1.numer_linii);
+           </script> 
+     </head> 
+<body> 
+  <br>
+  Programowanie obiektowe
+</body> 
+</html>
+
+</textarea>
+</body>
+</html>
