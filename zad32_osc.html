@@ -10,17 +10,19 @@
       }
 
       Autobus.prototype.wypisz = function() {
-          alert(this.marka + " " + this.model + " " + this.ilu_pasazerow + " pasażerów, linia " + this.numer_linii + ", miasto: " + this.miasto);
+          console.log(this.marka + " " + this.model + " " + this.ilu_pasazerow + " pasażerów, linia " + this.numer_linii + ", miasto: " + this.miasto);
       };
 
       Autobus.prototype.wyswietl_nazwisko = function() {
-          alert("Ościk");
+          console.log("Ościk");
       };
     </script>
   </head>
   <body>
     <br>
     Programowanie obiektowe
+
+    <div id="output"></div>
 
     <script type="text/javascript">
       var Autobus1 = new Autobus("MAN", "Lion’s City", 100, "Gdańsk", "189");
@@ -30,8 +32,9 @@
       Autobus2.wypisz();
       Autobus1.wyswietl_nazwisko();
 
-      document.write("Autobusy" + "<br>");
-      document.write("Autobus pierwszy: " + Autobus1.marka + " " + Autobus1.model + ", pasażerów: " + Autobus1.ilu_pasazerow + ", linia: " + Autobus1.numer_linii);
+      document.getElementById("output").innerHTML = 
+        "Autobusy<br>" +
+        "Autobus pierwszy: " + Autobus1.marka + " " + Autobus1.model + ", pasażerów: " + Autobus1.ilu_pasazerow + ", linia: " + Autobus1.numer_linii;
     </script>
   </body>
 </html>
