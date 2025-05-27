@@ -12,15 +12,15 @@
         <li>1-CZERWONY</li>
         <li>2-NIEBIESKI</li>
     </ul>
-    <input type="button" name="oblicz" value="Oblicz" onclick="fun_kow()" />
+    <input type="button" name="oblicz" value="Oblicz" onclick="fun_osc()" />
 
     <script>
-        function fun_kow() {
-            var x_kow = prompt("Podaj kolor: (1 - czerwony, 2 - niebieski, lub wpisz 'czerwony' lub 'niebieski')", "");
+        function fun_osc() {
+            var x_osc = prompt("Podaj kolor: (1 - czerwony, 2 - niebieski, lub wpisz 'czerwony' lub 'niebieski')", "");
 
-            if (x_kow == 1 || x_kow.toLowerCase() == "czerwony") {
+            if (x_osc == 1 || x_osc.toLowerCase() == "czerwony") {
                 document.write('<h1 style="color:red; font-size: 7em;">wczytałeś kolor czerwony</h1><br />');
-            } else if (x_kow == 2 || x_kow.toLowerCase() == "niebieski") {
+            } else if (x_osc == 2 || x_osc.toLowerCase() == "niebieski") {
                 document.write('<h6 style="color:blue; font-size: 1em;">wczytałeś kolor niebieski</h6><br />');
             } else {
                 document.write('<h1 style="color:red; font-size: 7em;">Nieprawidłowy wybór</h1><br />');
