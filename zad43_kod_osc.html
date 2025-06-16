@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad20 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad20" id="1" cols="80" rows="80">
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 43 – liczby parzyste</title>
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 20px; padding: 20px; }
+        .wynik { color: green; font-size: 30px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<h1>Zadanie 43 – liczby parzyste</h1>
+
+<div class="wynik" id="wynik"></div>
+
+<script>
+    let koniec_petli_osc = prompt("Podaj liczbę końcową:");
+    koniec_petli_osc = parseInt(koniec_petli_osc);
+
+    let wynikDiv = document.getElementById("wynik");
+
+    for (let i_osc = 2; i_osc <= koniec_petli_osc; i_osc++) {
+        if (i_osc % 2 === 0) {
+            wynikDiv.innerHTML += i_osc + " ";
+        }
+    }
+</script>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>
