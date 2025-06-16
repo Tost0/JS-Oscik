@@ -1,0 +1,38 @@
+
+<html>
+<body>
+    <div style="font-family: monospace; color: black;">
+        <textarea rows="15" cols="40" readonly id="prostokat"></textarea>
+        <script>
+            
+            let a_osc = (7 % 4) + 5; 
+            let b_osc = (6 % 6) + 20; 
+
+            let output = "";
+
+            
+            for (let i = 0; i < b_osc; i++) {
+                output += "*";
+            }
+            output += "\n";
+
+            
+            for (let i = 0; i < a_osc - 2; i++) {
+                output += "*";
+                for (let j = 0; j < b_osc - 2; j++) {
+                    output += " ";
+                }
+                output += "*\n";
+            }
+
+            
+            for (let i = 0; i < b_osc; i++) {
+                output += "*";
+            }
+
+            
+            document.getElementById("prostokat").value = output;
+        </script>
+    </div>
+</body>
+</html>
