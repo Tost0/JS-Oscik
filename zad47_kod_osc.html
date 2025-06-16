@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad20 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad20" id="1" cols="80" rows="80">
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Sprawdzanie trójkąta – Ościk</title>
+</head>
+<body>
+  <div style="color:blue; font-size:40px;">
+    <script>
+      let a_osc, b_osc, c_osc;
+
+      do {
+        a_osc = parseFloat(prompt("Podaj bok a trójkąta (cm):", ""));
+        b_osc = parseFloat(prompt("Podaj bok b trójkąta (cm):", ""));
+        c_osc = parseFloat(prompt("Podaj bok c trójkąta (cm):", ""));
+
+        if (!(a_osc > 0 && b_osc > 0 && c_osc > 0)) {
+          alert("Wszystkie boki muszą być większe od zera!");
+          continue; 
+        }
+
+        if (!((a_osc + b_osc > c_osc) && (a_osc + c_osc > b_osc) && (b_osc + c_osc > a_osc))) {
+          alert("Boki nie spełniają nierówności trójkąta, spróbuj ponownie.");
+        }
+      } while (!(a_osc > 0 && b_osc > 0 && c_osc > 0) || !((a_osc + b_osc > c_osc) && (a_osc + c_osc > b_osc) && (b_osc + c_osc > a_osc)));
+
+      document.write("Boki trójkąta: a = " + a_osc + " cm, b = " + b_osc + " cm, c = " + c_osc + " cm.<br>");
+      document.write("<b>Te boki tworzą trójkąt!</b>");
+    </script>
+  </div>
+</body>
+</html>
+
+</textarea>
+</body>
+</html>
