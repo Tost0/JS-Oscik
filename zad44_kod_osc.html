@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad20 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad20" id="1" cols="80" rows="80">
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 44 – Imię i nazwisko na zmianę</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .wynik {
+      color: darkblue;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Zadanie 44 – Imię i nazwisko na zmianę</h1>
+
+<div class="wynik" id="wynik"></div>
+
+<script>
+  const imie_osc = "Kacper";
+  const nazwisko_osc = "Ościk";
+
+  const ile_razy_osc = 13;       
+  const wielkosc_liter_osc = 41; 
+
+  const wynik = document.getElementById("wynik");
+  wynik.innerHTML += "ilość wykonania pętli = " + ile_razy_osc + "<br>";
+  wynik.innerHTML += "wielkość liter = " + wielkosc_liter_osc + "px<br><br>";
+
+  for (let i_osc = 1; i_osc <= ile_razy_osc; i_osc++) {
+    if (i_osc % 2 === 0) {
+      wynik.innerHTML += `<span style="font-size:${wielkosc_liter_osc}px;">${imie_osc}</span><br>`;
+    } else {
+      wynik.innerHTML += `<span style="font-size:${wielkosc_liter_osc}px;">${nazwisko_osc}</span><br>`;
+    }
+  }
+</script>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>
