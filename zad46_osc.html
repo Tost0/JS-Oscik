@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Sprawdzenie danych – Ościk</title>
+</head>
+<body>
+<div style="color:red; font-size:50px;">
+  <script>
+    let h_osc;
+    do {
+      let liczba1 = prompt("Podaj wysokość trójkąta (cm):", "");
+      h_osc = parseFloat(liczba1);
+    } while (h_osc <= 0);
+
+    let a_osc;
+    do {
+      let liczba2 = prompt("Podaj podstawę trójkąta (cm):", "");
+      a_osc = parseFloat(liczba2);
+    } while (!(a_osc > 0));
+
+    let Pole = (a_osc * h_osc) / 2;
+    document.write("Pole trójkąta = " + Pole.toFixed(2) + " cm²" + "<br>");
+  </script>
+</div>
+</body>
+</html>
